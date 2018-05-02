@@ -144,6 +144,11 @@ FOUNDATION_EXPORT KWHyperLinkInfoKey const HyperLinkText;
 FOUNDATION_EXPORT KWHyperLinkInfoKey const HyperLinkTextRange;
 
 /**
+ 当前点击的超链接字符串的在文中的index
+ */
+FOUNDATION_EXPORT KWHyperLinkInfoKey const HyperLinkTextIndex;
+
+/**
  需要忽略设置为超链接的index
  */
 FOUNDATION_EXPORT KWIgnoreHyperLinkTextIndex const IgnoreHyperLinkTextIndex;

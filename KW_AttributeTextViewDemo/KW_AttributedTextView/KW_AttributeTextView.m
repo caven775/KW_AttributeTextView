@@ -71,7 +71,8 @@
                 }
                 if (touchedInHyperLinkText) {
                     NSDictionary * info = @{HyperLinkText           : key,
-                                            HyperLinkTextRange      : value};
+                                            HyperLinkTextRange      : value,
+                                            HyperLinkTextIndex      : @(i)};
                     if (self.linkCallBack) {
                         self.linkCallBack(info);
                     }

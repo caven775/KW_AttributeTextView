@@ -143,8 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				12A01A7920994F610064824C /* KW_AttributeTextView.h */,
-				12A01A7A20994F610064824C /* KW_AttributeTextData.h */,
 				12A01A7B20994F610064824C /* KW_AttributeTextView.m */,
+				12A01A7A20994F610064824C /* KW_AttributeTextData.h */,
 				12A01A7C20994F610064824C /* KW_AttributeTextData.m */,
 			);
 			path = KW_AttributedTextView;

@@ -30,9 +30,11 @@
     data.text = string;
     data.font = [UIFont systemFontOfSize:14];
     data.textColor = [UIColor blackColor];
+    
     data.hyperLinks = @{@"势趋好": @{NSFontAttributeName: [UIFont systemFontOfSize:16], NSForegroundColorAttributeName: [UIColor blueColor], IgnoreHyperLinkTextIndex: @"1"},
                         @"200万": @{NSFontAttributeName: [UIFont systemFontOfSize:16], NSForegroundColorAttributeName: [UIColor orangeColor]},
                         @"近年来": @{NSFontAttributeName: [UIFont systemFontOfSize:16], NSForegroundColorAttributeName: [UIColor greenColor]}};
+    
     [data kw_completedDataSetting];
     
     KW_AttributeTextView * text = [[KW_AttributeTextView alloc] initWithFrame:CGRectMake(x, y, w, data.textRealSize.height)
@@ -42,14 +44,14 @@
     [self.view addSubview:text];
     
     [text kw_hyperLinkClicked:^(NSDictionary<KWHyperLinkInfoKey,id> *linkInfo) {
-        NSLog(@"block clicked == %@", linkInfo);
+        NSLog(@"block clicked hyperLink text == %@", linkInfo);
     }];
 }
 
 
 - (void)kw_hyperLinkClicked:(NSDictionary<KWHyperLinkInfoKey,id> *)linkInfo
 {
-    NSLog(@"delegate clicked == %@", linkInfo);
+    NSLog(@"delegate clicked hyperLink text == %@", linkInfo);
 }
 
 @end

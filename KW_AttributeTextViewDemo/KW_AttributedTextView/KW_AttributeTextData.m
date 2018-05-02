@@ -10,6 +10,7 @@
 
 KWHyperLinkInfoKey const HyperLinkText          = @"HyperLinkText";
 KWHyperLinkInfoKey const HyperLinkTextRange     = @"HyperLinkTextRange";
+KWHyperLinkInfoKey const HyperLinkTextIndex     = @"HyperLinkTextIndex";
 KWIgnoreHyperLinkTextIndex const IgnoreHyperLinkTextIndex = @"KWIgnoreHyperLinkTextIndex";
 
 
